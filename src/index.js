@@ -7,7 +7,7 @@ console.log(img)
 const footer = document.querySelector('.footer'); 
 
 const nav = document.querySelector('.nav');
-const home = nav.querySelector('.nav-link:nth-child(1)'); 
+// const home = nav.querySelector('.nav-link:nth-child(1)'); 
 const about = nav.querySelector('.nav-link:nth-child(2)'); 
 const blog = nav.querySelector('.nav-link:nth-child(3)'); 
 const contact = nav.querySelector('.nav-link:nth-child(4)');
@@ -67,7 +67,7 @@ document.addEventListener('keydown', escKey)
 
 const containerHome = document.querySelector('.home');
 
-home.addEventListener('click', evt => {
+containerHome.addEventListener('click', evt => {
     console.log(evt.target)
     evt.preventDefault(); 
 })
@@ -131,6 +131,7 @@ lastImage.addEventListener('mouseover', evt => {
     evt.target.style.boxShadow = "5px 5px 5px gray"
     evt.target.style.transition = ".5s"
     
+
 }) 
 lastImage.addEventListener('mouseleave', evt => {
     evt.target.style.borderRadius = 'none'
