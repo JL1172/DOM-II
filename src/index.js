@@ -1,43 +1,47 @@
 import './less/index.less'
 
 // Your code goes here!
+console.log('hello world')
+import './less/index.less'
+
+// Your code goes here!
 const body = document.querySelector('body');
 const img = document.querySelector('header img');
 console.log(img)
 const footer = document.querySelector('.footer'); 
 
 const nav = document.querySelector('.nav');
-// const home = nav.querySelector('.nav-link:nth-child(1)'); 
-const about = nav.querySelector('.nav-link:nth-child(2)'); 
-const blog = nav.querySelector('.nav-link:nth-child(3)'); 
-const contact = nav.querySelector('.nav-link:nth-child(4)');
+const home = document.querySelector('.nav-link:nth-child(1)'); 
+const about = document.querySelector('.nav-link:nth-child(2)'); 
+const blog = document.querySelector('.nav-link:nth-child(3)'); 
+const contact = document.querySelector('.nav-link:nth-child(4)');
 
 
 function letterSpread(evt) {
     evt.target.style.letterSpacing = '.3rem'; 
     evt.target.style.borderBottom = '1px solid blue';
     evt.target.style.transition = '.2s'
-    evt.stopPropagation();
+
 }
 function letterClose(evt) {
     evt.target.style.letterSpacing = '0'; 
     evt.target.style.borderBottom = 'none';
     evt.target.style.transition = '.2s'
-    evt.stopPropagation();
+  
 }
-home.addEventListener('mouseover', letterSpread) 
-home.addEventListener('mouseleave',letterClose)
+// home.addEventListener('mouseover', letterSpread) 
+// home.addEventListener('mouseleave',letterClose)
 
-about.addEventListener('mouseover', letterSpread) 
-about.addEventListener('mouseleave',letterClose)
+// about.addEventListener('mouseover', letterSpread) 
+// about.addEventListener('mouseleave',letterClose)
 
-blog.addEventListener('mouseover', letterSpread) 
-blog.addEventListener('mouseleave',letterClose)
+// blog.addEventListener('mouseover', letterSpread) 
+// blog.addEventListener('mouseleave',letterClose)
 
-contact.addEventListener('mouseover', letterSpread) 
-contact.addEventListener('mouseleave',letterClose)
+// contact.addEventListener('mouseover', letterSpread) 
+// contact.addEventListener('mouseleave',letterClose)
 
-//heading done for links
+// //heading done for links
 
 const buttons = document.querySelectorAll('.btn')
 buttons.forEach(btn=> {
@@ -67,22 +71,22 @@ document.addEventListener('keydown', escKey)
 
 const containerHome = document.querySelector('.home');
 
-containerHome.addEventListener('click', evt => {
-    console.log(evt.target)
-    evt.preventDefault(); 
-})
-about.addEventListener('click', evt => {
+// containerHome.addEventListener('click', evt => {
+//     console.log(evt.target)
+//     evt.preventDefault(); 
+// })
+// about.addEventListener('click', evt => {
 
-    evt.preventDefault(); 
-})
-blog.addEventListener('click', evt => {
+//     evt.preventDefault(); 
+// })
+// blog.addEventListener('click', evt => {
    
-    evt.preventDefault(); 
-})
-contact.addEventListener('click', evt => {
+//     evt.preventDefault(); 
+// })
+// contact.addEventListener('click', evt => {
    
-    evt.preventDefault(); 
-})
+//     evt.preventDefault(); 
+// })
 
 console.log(containerHome)
 const doc = document.querySelectorAll('.nav').forEach(n=> {
@@ -112,29 +116,29 @@ const allImages = document.querySelectorAll('.img-content').forEach(img=> {
         evt.target.style.width = ""
     })
 })
-img.addEventListener('mouseover', evt => {
-    evt.target.style.borderRadius = '25px'
-    evt.target.style.boxShadow = "5px 5px 5px gray"
-    evt.target.style.transition = ".5s"
+// img.addEventListener('mouseover', evt => {
+//     evt.target.style.borderRadius = '25px'
+//     evt.target.style.boxShadow = "5px 5px 5px gray"
+//     evt.target.style.transition = ".5s"
     
-}) 
-img.addEventListener('mouseleave', evt => {
-    evt.target.style.borderRadius = ''
-    evt.target.style.boxShadow = ""
-    evt.target.style.transition = ".5s"
-})
+// }) 
+// img.addEventListener('mouseleave', evt => {
+//     evt.target.style.borderRadius = ''
+//     evt.target.style.boxShadow = ""
+//     evt.target.style.transition = ".5s"
+// })
 
-const lastImage = document.querySelector('.content-destination img');
+// const lastImage = document.querySelector('.content-destination img');
 
-lastImage.addEventListener('mouseover', evt => {
-    evt.target.style.borderRadius = '25px'
-    evt.target.style.boxShadow = "5px 5px 5px gray"
-    evt.target.style.transition = ".5s"
+// lastImage.addEventListener('mouseover', evt => {
+//     evt.target.style.borderRadius = '25px'
+//     evt.target.style.boxShadow = "5px 5px 5px gray"
+//     evt.target.style.transition = ".5s"
     
 
-}) 
-lastImage.addEventListener('mouseleave', evt => {
-    evt.target.style.borderRadius = 'none'
-    evt.target.style.boxShadow = ""
-    evt.target.style.transition = ".5s"
-})
+// }) 
+// lastImage.addEventListener('mouseleave', evt => {
+//     evt.target.style.borderRadius = 'none'
+//     evt.target.style.boxShadow = ""
+//     evt.target.style.transition = ".5s"
+// })
