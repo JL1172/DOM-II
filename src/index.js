@@ -1,10 +1,7 @@
 import './less/index.less'
 
 // Your code goes here!
-console.log('hello world')
-import './less/index.less'
 
-// Your code goes here!
 const body = document.querySelector('body');
 const img = document.querySelector('header img');
 console.log(img)
@@ -29,17 +26,17 @@ function letterClose(evt) {
     evt.target.style.transition = '.2s'
   
 }
-// home.addEventListener('mouseover', letterSpread) 
-// home.addEventListener('mouseleave',letterClose)
+home.addEventListener('mouseover', letterSpread) 
+home.addEventListener('mouseleave',letterClose)
 
-// about.addEventListener('mouseover', letterSpread) 
-// about.addEventListener('mouseleave',letterClose)
+about.addEventListener('mouseover', letterSpread) 
+about.addEventListener('mouseleave',letterClose)
 
-// blog.addEventListener('mouseover', letterSpread) 
-// blog.addEventListener('mouseleave',letterClose)
+blog.addEventListener('mouseover', letterSpread) 
+blog.addEventListener('mouseleave',letterClose)
 
-// contact.addEventListener('mouseover', letterSpread) 
-// contact.addEventListener('mouseleave',letterClose)
+contact.addEventListener('mouseover', letterSpread) 
+contact.addEventListener('mouseleave',letterClose)
 
 // //heading done for links
 
@@ -71,22 +68,22 @@ document.addEventListener('keydown', escKey)
 
 const containerHome = document.querySelector('.home');
 
-// containerHome.addEventListener('click', evt => {
-//     console.log(evt.target)
-//     evt.preventDefault(); 
-// })
-// about.addEventListener('click', evt => {
+containerHome.addEventListener('click', evt => {
+    console.log(evt.target)
+    evt.preventDefault(); 
+})
+about.addEventListener('click', evt => {
 
-//     evt.preventDefault(); 
-// })
-// blog.addEventListener('click', evt => {
+    evt.preventDefault(); 
+})
+blog.addEventListener('click', evt => {
    
-//     evt.preventDefault(); 
-// })
-// contact.addEventListener('click', evt => {
+    evt.preventDefault(); 
+})
+contact.addEventListener('click', evt => {
    
-//     evt.preventDefault(); 
-// })
+    evt.preventDefault(); 
+})
 
 console.log(containerHome)
 const doc = document.querySelectorAll('.nav').forEach(n=> {
@@ -104,41 +101,41 @@ console.log(doc);
 
 const allImages = document.querySelectorAll('.img-content').forEach(img=> {
     img.addEventListener('mouseover', evt => {
-        evt.target.style.borderRadius = '25px'
-        evt.target.style.boxShadow = "5px 5px 5px gray"
-        evt.target.style.transition = ".5s"
-        evt.target.style.width = "35rem"
+        evt.target.style.borderRadius = '25px';
+        evt.target.style.boxShadow = "5px 5px 5px gray";
+        evt.target.style.transition = ".5s";  
+        evt.target.style.transform = "rotate(1deg)"     
     }) 
     img.addEventListener('mouseleave', evt => {
         evt.target.style.borderRadius = ''
         evt.target.style.boxShadow = ""
         evt.target.style.transition = ".5s"
-        evt.target.style.width = ""
+        evt.target.style.transform = "rotate(-1deg)"
     })
 })
-// img.addEventListener('mouseover', evt => {
-//     evt.target.style.borderRadius = '25px'
-//     evt.target.style.boxShadow = "5px 5px 5px gray"
-//     evt.target.style.transition = ".5s"
+img.addEventListener('mouseover', evt => {
+    evt.target.style.borderRadius = '25px'
+    evt.target.style.boxShadow = "5px 5px 5px gray"
+    evt.target.style.transition = ".5s"
     
-// }) 
-// img.addEventListener('mouseleave', evt => {
-//     evt.target.style.borderRadius = ''
-//     evt.target.style.boxShadow = ""
-//     evt.target.style.transition = ".5s"
-// })
+}) 
+img.addEventListener('mouseleave', evt => {
+    evt.target.style.borderRadius = ''
+    evt.target.style.boxShadow = ""
+    evt.target.style.transition = ".5s"
+})
 
-// const lastImage = document.querySelector('.content-destination img');
+const lastImage = document.querySelector('.content-destination img');
 
-// lastImage.addEventListener('mouseover', evt => {
-//     evt.target.style.borderRadius = '25px'
-//     evt.target.style.boxShadow = "5px 5px 5px gray"
-//     evt.target.style.transition = ".5s"
+lastImage.addEventListener('mouseover', evt => {
+    evt.target.style.borderRadius = '25px'
+    evt.target.style.boxShadow = "5px 5px 5px gray"
+    evt.target.style.transition = ".5s"
     
 
-// }) 
-// lastImage.addEventListener('mouseleave', evt => {
-//     evt.target.style.borderRadius = 'none'
-//     evt.target.style.boxShadow = ""
-//     evt.target.style.transition = ".5s"
-// })
+}) 
+lastImage.addEventListener('mouseleave', evt => {
+    evt.target.style.borderRadius = 'none'
+    evt.target.style.boxShadow = ""
+    evt.target.style.transition = ".5s"
+})
